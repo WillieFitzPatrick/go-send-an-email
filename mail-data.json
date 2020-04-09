@@ -1,0 +1,14 @@
+{
+    "To": "destino@dominio.com.ar",
+    "Subject": "Nuevo eMail con Factura",
+    "Body": "mail-nueva-factura.html",
+    "Attachments": [],
+    "Attachments-demo": [
+        {"Attachment":"path.to.file.to.attach"}
+    ],
+    "Slots": [
+        {"Id":"nrofac","Value":"FC A 0000-00000000"},
+        {"Id":"imp","Value":"$ 11.111,00.-"},
+        {"Id":"vto","Value":"01/04/2020"}
+    ]
+}

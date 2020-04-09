@@ -1,0 +1,11 @@
+{
+    "smtpUrl": "mail.dominio.com",
+    "smtpPort": 25,
+    "smtpUser": "usuario@dominio.com",
+    "smtpPassword": "123456",
+    "titular":"Mi nombre",
+    "banco": "Mi banco",
+    "cuit": "Mi cuit",
+    "cbu": "Mi cbu",
+    "cta": "Mi cuenta"
+}

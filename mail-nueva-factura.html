@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Aviso de emisi&oacute;n de nuevo comprobante</title>
+        <!-- <style>
+            body,table,thead,tbody,tr,td,img,a,p {
+                padding: 0;
+                margin: 0;
+                border: none;
+                border-spacing: 0px;
+                border-collapse: collapse;
+                vertical-align: middle;
+                color: #767676;
+                font-family: 'Helvetica', 'Arial', sans-serif;
+            }
+
+            .wrapper {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .border {
+                margin-top: 24px;
+                border: 1px solid #cccccc;
+            }
+
+            p {
+                padding: 24px;
+                line-height: 1.6;
+            }
+
+            h1 {
+                font-size: 32px;
+                font-weight: normal;
+                color: #EC0000;
+                margin: 24px 0 0 24px;
+            }
+
+            .item-title, .item-data {
+                width: 252px;
+                border-bottom: 1px solid #767676;
+                font-size: 16px;
+            }
+
+            .last {
+                border: none;
+            }
+
+            .item-title {
+                text-align: left;
+            }
+
+            .item-data {
+                font-weight: bold;
+                text-align: right;
+            }
+
+            .legal-text {
+                font-size: 14px;
+                line-height: 1.4;
+                color: #818181;
+            }
+
+            .legal-text b {
+                color: #444444
+            }
+
+            .legal-text .red {
+                color: #EC0000;
+            }
+
+            .header-img {
+                background-color: #DEEDF2;
+                height: 120px;
+                display: block;
+                padding-top: 1px;
+            }
+
+            .gris {
+                vertical-align: top;
+                background-color: #f5f5f5;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .wrapper .section {
+                    width: 100%;
+                }
+
+                p, a, .legal-text, .text-box {
+                    font-size: 20px;
+                }
+            }
+
+        </style> -->
+    </head>
+    <body class="viewframe" style="font-family: Helvetica">
+        <div style="width: 100%; display:flex; justify-content: center; align-items: center; margin: 50px 0;">
+            <div style="width: 100%; max-width: 600px; border:1px solid #DEEDF2; padding: 50px 30px;">
+                <table width=100%>
+                    <tr>
+                        <td>
+                            <img style="width:180px;height:38px;margin-bottom: 15px;" src="https://sistemasw.com.ar/logo-sistemasw.jpg" alt="logo sistemasw">
+                            <div style="display:flex; justify-content: center; align-items: center; background-color: #DEEDF2; height: 120px;width: 100%;">
+                                
+                                <h1 style="width: 100%; text-align: center;font-size: 30px; line-height: 30px; font-weight: normal; color: #EC0000;">
+                                    Aviso de emisi&oacute;n de nuevo comprobante.
+                                </h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="display:flex; justify-content: center; align-items: center; background-color: #ffffff; width: 100%">
+                                <h1 style="width: 100%; text-align: start;font-size: 17px; line-height:30px; font-weight: normal; color: #767676;">
+                                    <p>Le informamos que hemos emitido el comprobante {{nrofac}}</p>
+                                    <div style="border: 1px solid #DEEDF2; font-size: 14px; box-shadow:3px 3px 6px 0 #c2bcc2; padding: 0 20px; display: flex; justify-content: space-between;">
+                                        <p>Importe <strong>{{imp}}</strong></p>
+                                        <p>Vencimiento <strong>{{vto}}</strong></p>
+                                    </div>
+                                </h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="display:flex; justify-content: center; align-items: center; background-color: #fff; width: 100%">
+                                <h1 style="width: 100%; text-align: start;font-size: 17px; line-height: 18px; font-weight: normal; color: #767676;">
+                                    <p>Informaci&oacute;n para el pago</p>
+                                    <div style="border: 1px solid #DEEDF2; font-size: 14px; box-shadow:3px 3px 6px 0 #c2bcc2; padding: 0 20px;">
+                                        <p><span style="float: left; width: 70px; min-width: 70px;">titular</span><strong>{{titular}}</strong></p>
+                                        <p><span style="float: left; width: 70px; min-width: 70px;">banco</span><strong>{{banco}}</strong></p>
+                                        <p><span style="float: left; width: 70px; min-width: 70px;">cuit</span><strong>{{cuit}}</strong></p>
+                                        <p><span style="float: left; width: 70px; min-width: 70px;">cbu</span><strong>{{cbu}}</strong></p>
+                                        <p><span style="float: left; width: 70px; min-width: 70px;">cta</span><strong>{{cta}}</strong></p>
+                                    </div>
+                                </h1>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
