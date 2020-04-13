@@ -1,0 +1,13 @@
+{
+    "To": "mail del cliente",
+    "Subject": "Empresa - Nuevo Recibo",
+    "Body": "mail-nuevo-recibo.html",
+    "Attachments": [
+        {"Attachment":"C:/Users/xxxxxxxxxxxxxxxxxxxxx/Google Drive/gestionW/Recibos Emitidos/RCX000200000.pdf"}
+    ],
+    "Slots": [
+        {"Id":"nrorec","Value":"RC X 0002-00000"},
+        {"Id":"nrofac","Value":"FC A 0002-00000"},
+        {"Id":"imp","Value":"$ 00.000,00.-"}
+    ]
+}
