@@ -20,6 +20,7 @@ type CfgData struct {
 // MailData data struct
 type MailData struct {
 	To            string `json:"To"`
+	Cc            string `json:"Cc"`
 	Subject       string `json:"Subject"`
 	Body          string `json:"Body"`
 	Attachments   []Attachment `json:"Attachments"`

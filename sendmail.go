@@ -12,6 +12,9 @@ func GoSendMail(cfg CfgData, mailData MailData) (error) {
 	m := gomail.NewMessage()
 	m.SetHeader("From", cfg.SMTPUser)
 	m.SetHeader("To", mailData.To)
+	if mailData.Cc != "" {
+		m.SetHeader("Cc", mailData.Cc)
+	}
 
 	m.SetHeader("Subject", mailData.Subject)
 

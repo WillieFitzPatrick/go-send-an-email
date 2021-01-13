@@ -1,14 +1,24 @@
 {
-    "To": "destino@dominio.com.ar",
-    "Subject": "Nuevo eMail con Factura",
+    "To-": "gfitzpatrick@sistemasw.com.ar",
+    "To--": "gerardo.garrera@redaustralgomas.com.ar",
+    "To---": "dazpillaga@sistemasw.com.ar",
+    "To----": "osvaldonunez@amarras.com.ar",
+    "To-------": "xavier.buxade@ottech.com.ar",
+    "To------": "administracionjmr@grupodragon.net",
+    "To-----": "administracion@gresuco.com.ar",
+    "To--------": "hernancipriani@yahoo.com",
+    "To---------": "administracion@homerosrl.com.ar",
+    "To----------": "contrataciones.op@radatilly.gob.ar",
+    "To": "fgonzalez@nuevosur.com.ar",
+    "Cc": "",
+    "Subject": "Aviso de emision de nuevo comprobante.",
     "Body": "mail-nueva-factura.html",
-    "Attachments": [],
-    "Attachments-demo": [
-        {"Attachment":"path.to.file.to.attach"}
+    "Attachments": [
+        {"Attachment":"C:/Users/willie/Google Drive/gestionW/Facturas Emitidas/FCA000200000802.pdf"}
     ],
     "Slots": [
-        {"Id":"nrofac","Value":"FC A 0000-00000000"},
-        {"Id":"imp","Value":"$ 11.111,00.-"},
-        {"Id":"vto","Value":"01/04/2020"}
+        {"Id":"nrofac","Value":"FC A 0002-00000802"},
+        {"Id":"imp","Value":"$10.407,21.-"},
+        {"Id":"vto","Value":"15/09/2020"}
     ]
 }

@@ -2,7 +2,9 @@
     <head>
         <title>Aviso de emisi&oacute;n de nuevo recibo</title>
         <style>
-            
+            .section-title {
+                padding: 30px 10px 10px 10px;
+            }
 
             @media only screen and (max-width: 600px) {
                 body {
@@ -10,10 +12,10 @@
                     padding: 5px;
                 }
                 p {
-                    padding: 10px 0;
+                    padding: 0;
                 }
                 .section-title {
-                    padding: 0px 10px;
+                    padding: 30px 10px 10px 10px;
                 }
                 .content-wrapper  {
                     width: 100% !important;
@@ -47,20 +49,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <!-- <td>
-                            <div style="display:flex; justify-content: center; align-items: center; background-color: #ffffff; width: 100%">
-                                <h1 style="width: 100%; text-align: start;font-size: 17px; line-height:30px; font-weight: normal; color: #767676;">
-                                    <p>Le informamos que hemos emitido el recibo {{nrorec}}</p>
-                                    <div class="box" style="border: 1px solid #DEEDF2; font-size: 14px; box-shadow:3px 3px 6px 0 #c2bcc2; padding: 0 20px; display: flex; justify-content: space-between;">
-                                        <p>Importe <strong>{{imp}}</strong></p>
-                                        <p>Cancela <strong>{{nrofac}}</strong></p>
-                                    </div>
-                                </h1>
-                            </div>
-                        </td> -->
                         <td>
-                            <div style="background-color: #ffffff; width: 100%; padding: 30px 0;">
-                                <p class="section-title">Le informamos que hemos emitido el recibo {{nrorec}}</p>
+                            <div style="background-color: #ffffff; width: 100%;">
+                                <p class="section-title" style="padding: 30px 10px 10px 10px;">Le informamos que hemos emitido el recibo {{nrorec}}</p>
                                 <div class="box" style="border: 1px solid #DEEDF2; font-size: 14px; box-shadow:3px 3px 6px 0 #c2bcc2; padding: 0 20px; display: flex; justify-content: space-between;">
                                     <p>Importe <strong>{{imp}}</strong></p>
                                     <p>Cancela <strong>{{nrofac}}</strong></p>
