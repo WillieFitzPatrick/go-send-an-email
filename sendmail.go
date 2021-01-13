@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"os"
 	"gopkg.in/gomail.v2"
+    "log"
 )
 
 // GoSendMail sends a mail
@@ -21,7 +22,8 @@ func GoSendMail(cfg CfgData, mailData MailData) (error) {
 	body := ""
 	fileBody, err := os.Open(mailData.Body)
     if err != nil {
-        // log.Fatal(err)
+		// log.Fatal(err)
+		log.Printf("Error al leer mailData.Body, Error : %s", err.Error())
     } else {
 
 		defer fileBody.Close()
@@ -33,6 +35,8 @@ func GoSendMail(cfg CfgData, mailData MailData) (error) {
 	
 		if err := scanner.Err(); err != nil {
 			// log.Fatal(err)
+			log.Printf("Error en bufio.NewScanner(fileBody), Error : %s", err.Error())
+
 		}
 	}
 

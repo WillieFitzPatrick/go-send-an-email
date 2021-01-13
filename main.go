@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"flag"
 	"log"
+	"time"
 )
 
 const (
@@ -35,10 +36,17 @@ func main() {
 		log.Printf("Error al leer archivo de configuracion (config.json) - error %s", err.Error())
 	}
 
+	fmt.Println("server : ", cfg.SMTPUrl, "port : ", cfg.SMTPPort)
+
 	fmt.Println("sending email to: ", mailData.To, " with ", len(mailData.Attachments)," attachments.")
 	err = GoSendMail(cfg, mailData)
 	if err != nil {
 		log.Printf("SendMail returned an error: %s", err.Error())
+		time.Sleep(10 * time.Second)
+
+	} else {
+
+		fmt.Println("email sent!")
+		time.Sleep(2 * time.Second)
 	}
-	fmt.Println("email sent!")
 }
