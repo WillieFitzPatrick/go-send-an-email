@@ -1,0 +1,15 @@
+{
+    "To": "contrataciones.op@radatilly.gob.ar",
+    "To-": "gfitzpatrick@sistemasw.com.ar",
+    "Cc": "",
+    "Subject": "Aviso de emision de nuevo comprobante.",
+    "Body": "mail-nueva-factura.html",
+    "Attachments": [
+        {"Attachment":"C:/Users/willie/Google Drive/gestionW/Facturas Emitidas/FCB000200000055.pdf"}
+    ],
+    "Slots": [
+        {"Id":"nrofac","Value":"FC B 0002-00000055"},
+        {"Id":"imp","Value":"$ 17.775,00.-"},
+        {"Id":"vto","Value":"12/08/2020"}
+    ]
+}
