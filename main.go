@@ -9,7 +9,7 @@ import (
 
 const (
 	// VERSION of this software
-	VERSION = "0.10";
+	VERSION = "0.12";
 )
 
 func main() {
@@ -38,7 +38,11 @@ func main() {
 
 	fmt.Println("server : ", cfg.SMTPUrl, "port : ", cfg.SMTPPort)
 
-	fmt.Println("sending email to: ", mailData.To, " with ", len(mailData.Attachments)," attachments.")
+	fmt.Println("sending email to: ", mailData.To)
+	if mailData.Cc != "" {
+		fmt.Println("cc : ", mailData.Cc, " with ", len(mailData.Attachments)," attachments.")
+	}
+	fmt.Println(" with ", len(mailData.Attachments)," attachments.")
 	err = GoSendMail(cfg, mailData)
 	if err != nil {
 		log.Printf("SendMail returned an error: %s", err.Error())
