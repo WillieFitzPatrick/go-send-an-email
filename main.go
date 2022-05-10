@@ -9,7 +9,7 @@ import (
 
 const (
 	// VERSION of this software
-	VERSION = "0.12";
+	VERSION = "0.15";
 )
 
 func main() {

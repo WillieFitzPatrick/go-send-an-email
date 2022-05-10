@@ -5,6 +5,7 @@ import (
 	"os"
 	"gopkg.in/gomail.v2"
     "log"
+	"strings"
 )
 
 // GoSendMail sends a mail
@@ -14,7 +15,9 @@ func GoSendMail(cfg CfgData, mailData MailData) (error) {
 	m.SetHeader("From", cfg.SMTPUser)
 	m.SetHeader("To", mailData.To)
 	if mailData.Cc != "" {
-		m.SetHeader("Cc", mailData.Cc)
+		adresses := strings.Split(mailData.Cc,";")
+		// m.SetHeader("Cc", mailData.Cc)
+		m.SetHeader("Cc", adresses...)
 	}
 
 	m.SetHeader("Subject", mailData.Subject)
